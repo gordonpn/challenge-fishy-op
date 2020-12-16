@@ -5,6 +5,7 @@ import {
   Heading,
   Stack,
   Tooltip,
+  Text,
 } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
@@ -20,6 +21,19 @@ const Title = styled(Heading)`
   font-family: "Bree Serif", serif;
 `;
 
+const Footer = styled.div`
+  margin-top: 1rem;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+`;
+
+const FooterText = styled(Text)`
+  font-family: "Bree Serif", serif;
+`;
+
 const Index = () => (
   <Background>
     <Container centerContent paddingTop={["0.5in", "1.5in"]}>
@@ -27,7 +41,7 @@ const Index = () => (
         <Title align="center">Gordon&apos;s Shopify Challenge Response</Title>
       </Flex>
       <Flex>
-        <Stack spacing={4} direction="row" align="center">
+        <Stack spacing={4} direction={["column", "row"]} align="center">
           <Tooltip
             hasArrow
             shouldWrapChildren
@@ -58,6 +72,11 @@ const Index = () => (
           </Tooltip>
         </Stack>
       </Flex>
+      <Footer>
+        <Flex justifyContent="center">
+          <FooterText>Gordon Pham-Nguyen &copy; 2020</FooterText>
+        </Flex>
+      </Footer>
     </Container>
   </Background>
 );
