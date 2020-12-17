@@ -5,9 +5,6 @@ import styled from "@emotion/styled";
 const StickyBottom = styled.div`
   margin-top: 1rem;
   padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
 `;
 

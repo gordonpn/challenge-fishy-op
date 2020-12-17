@@ -1,8 +1,7 @@
-import { Container } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import React from "react";
 import Hero from "../src/components/Hero";
-import Search from "../src/components/Search";
+import Search from "../src/components/Search/Search";
 import Footer from "../src/components/Footer";
 
 const Background = styled.div`
@@ -14,9 +13,7 @@ const Background = styled.div`
 
 const Index = () => (
   <Background>
-    <Container centerContent paddingTop={["0.5in", "1.5in"]}>
-      <Hero />
-    </Container>
+    <Hero />
     <Search />
     <Footer />
   </Background>
