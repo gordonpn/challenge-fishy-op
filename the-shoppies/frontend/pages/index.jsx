@@ -1,6 +1,9 @@
-import { Container, Flex, Heading, Input, Box, Text } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import React from "react";
+import Hero from "../src/components/Hero";
+import Search from "../src/components/Search";
+import Footer from "../src/components/Footer";
 
 const Background = styled.div`
   background-color: #ffffff;
@@ -9,43 +12,13 @@ const Background = styled.div`
   min-height: 100%;
 `;
 
-const Title = styled(Heading)`
-  font-family: "Bree Serif", serif;
-`;
-
-const Footer = styled.div`
-  margin-top: 1rem;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-`;
-
-const FooterText = styled(Text)`
-  font-family: "Bree Serif", serif;
-`;
-
 const Index = () => (
   <Background>
     <Container centerContent paddingTop={["0.5in", "1.5in"]}>
-      <Flex justifyContent="center" paddingBottom={["0.25in", "0.5in"]}>
-        <Title align="center">The Shoppies</Title>
-      </Flex>
-      <Box
-        borderWidth="2px"
-        boxShadow="md"
-        rounded="lg"
-        width={["100%", "50vw"]}
-      >
-        <Input variant="filled" placeholder="Search for a movie..." size="lg" />
-      </Box>
-      <Footer>
-        <Flex justifyContent="center">
-          <FooterText>Gordon Pham-Nguyen &copy; 2020</FooterText>
-        </Flex>
-      </Footer>
+      <Hero />
     </Container>
+    <Search />
+    <Footer />
   </Background>
 );
 

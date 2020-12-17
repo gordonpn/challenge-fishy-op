@@ -1,19 +1,17 @@
-import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import "../styles/globals.css";
 import React from "react";
+import Head from "next/head";
 
 import theme from "../src/theme";
 
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider resetCSS theme={theme}>
-      <ColorModeProvider
-        options={{
-          useSystemColorMode: true,
-        }}
-      >
-        <Component {...pageProps} />
-      </ColorModeProvider>
+      <Head>
+        <title>Shopify Challenge 2021</title>
+      </Head>
+      <Component {...pageProps} />
     </ChakraProvider>
   );
 }
