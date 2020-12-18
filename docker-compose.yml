@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  front-page_frontend:
+    build:
+      context: ./front-page/frontend
+      dockerfile: Dockerfile
+    environment:
+      - TZ=America/Montreal
+    restart: unless-stopped
+
+  shoppies_frontend:
+    build:
+      context: ./shoppies/frontend
+      dockerfile: Dockerfile
+    environment:
+      - TZ=America/Montreal
+    restart: unless-stopped
+
+  proxy:
+    build:
+      context: ./proxy
+      dockerfile: Dockerfile
+    environment:
+      - TZ=America/Montreal
+    restart: unless-stopped
+    depends_on:
+      - front-page_frontend
+      - shoppies_frontend

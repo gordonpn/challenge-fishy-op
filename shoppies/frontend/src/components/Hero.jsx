@@ -7,13 +7,13 @@ const Title = styled(Heading)`
 `;
 
 const Hero = () => (
-  <Container centerContent paddingY="1rem">
+  <Container centerContent paddingY="3rem">
     <Flex justifyContent="center" direction="column">
       <Title align="center">The Shoppies</Title>
-      <Title align="center" size="md" paddingTop="0.1in">
+      <Title align="center" size="md" paddingTop="1rem">
         Movie awards for entrepreneurs
       </Title>
-      <Text align="center" paddingTop="0.1in">
+      <Text align="center" paddingTop="1rem">
         This is your chance to nominate five of your favourite movies!
       </Text>
     </Flex>

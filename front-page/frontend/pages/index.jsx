@@ -6,6 +6,7 @@ import {
   Stack,
   Tooltip,
   Text,
+  Link,
 } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
@@ -52,24 +53,21 @@ const Index = () => (
               rightIcon={<ArrowForwardIcon />}
               colorScheme="teal"
               size="lg"
+              _focus={{}}
             >
               Image Repository
             </Button>
           </Tooltip>
-          <Tooltip
-            hasArrow
-            shouldWrapChildren
-            label="Available soon!"
-            placement="top"
-          >
+          <Link href="/shoppies" textDecoration="none !important">
             <Button
-              rightIcon={<ArrowForwardIcon />}
+              _focus={{}}
               colorScheme="teal"
+              rightIcon={<ArrowForwardIcon />}
               size="lg"
             >
               The Shoppies
             </Button>
-          </Tooltip>
+          </Link>
         </Stack>
       </Flex>
       <Footer>
