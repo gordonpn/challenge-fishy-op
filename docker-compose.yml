@@ -12,6 +12,8 @@ services:
     build:
       context: ./shoppies/frontend
       dockerfile: Dockerfile
+      args:
+        - NEXT_PUBLIC_OMDB_KEY
     environment:
       - TZ=America/Montreal
     restart: unless-stopped

@@ -7,3 +7,6 @@
 .vscode/
 README.md
 node_modules/
+.env.local
+.pretierignore
+.prettierrc.json

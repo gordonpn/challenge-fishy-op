@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   front-page_frontend:
-    container_name: front-page_frontend-dev
+    container_name: shopify_front-page_frontend-dev
     environment:
       - NODE_ENV=development
     ports:
@@ -10,7 +10,7 @@ services:
       - shopify-challenge-network
 
   shoppies_frontend:
-    container_name: shoppies_frontend-dev
+    container_name: shopify_shoppies_frontend-dev
     environment:
       - NODE_ENV=development
     ports:
@@ -19,7 +19,7 @@ services:
       - shopify-challenge-network
 
   proxy:
-    container_name: proxy-dev
+    container_name: shopify_proxy-dev
     ports:
       - "127.0.0.1:4000:80"
     networks:

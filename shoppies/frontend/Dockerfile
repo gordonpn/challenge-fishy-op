@@ -8,6 +8,8 @@ USER node
 RUN yarn install --frozen-lockfile
 RUN yarn cache clean
 COPY --chown=node:node . .
+ARG NEXT_PUBLIC_OMDB_KEY
+ENV NEXT_PUBLIC_OMDB_KEY=$NEXT_PUBLIC_OMDB_KEY
 RUN yarn export
 
 FROM caddy:2-alpine
