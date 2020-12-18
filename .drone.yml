@@ -17,7 +17,7 @@ steps:
       template: >
         {{ uppercasefirst build.event }} on branch {{ build.branch }} from repo {{repo.name}}
 
-        Request to deploy #{{build.number}}
+        Request to deploy build #{{build.number}}
 
         <{{ build.link }}|Visit build page ➡️>
 

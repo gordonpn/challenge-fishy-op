@@ -29,6 +29,10 @@ const Search = () => {
     { enabled: false }
   );
 
+  const handleChange = (input) => {
+    setSearchTerm(input.replace(/[^0-9a-z\s]/gi, ""));
+  };
+
   useEffect(() => {
     if (debouncedSearchTerm.trim().length > 0) {
       refetch();
@@ -46,7 +50,8 @@ const Search = () => {
         >
           <Input
             _focus={{}}
-            onChange={(e) => setSearchTerm(e.target.value)}
+            value={searchTerm}
+            onChange={(e) => handleChange(e.target.value)}
             placeholder="Search for a movie..."
             size="lg"
             variant="filled"
