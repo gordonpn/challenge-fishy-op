@@ -18,6 +18,16 @@ export default function NominateButton({ movie }) {
       status: "success",
       title: "New nomination made",
     });
+    if (nominations.size >= 5) {
+      toast({
+        description: "You have reached the maximum number of nominations",
+        duration: 7000,
+        isClosable: true,
+        position: "top-right",
+        status: "warning",
+        title: "Max reached",
+      });
+    }
     setRerender(!rerender);
     toggleRerender();
   };

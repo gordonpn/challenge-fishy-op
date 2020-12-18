@@ -8,7 +8,11 @@ export default function Results({ results }) {
     <>
       <SimpleGrid minChildWidth="120px" spacing={10}>
         {results.map((movie) => (
-          <MovieItem movie={movie} button={<NominateButton movie={movie} />} />
+          <MovieItem
+            button={<NominateButton movie={movie} />}
+            key={movie.imdbID}
+            movie={movie}
+          />
         ))}
       </SimpleGrid>
     </>

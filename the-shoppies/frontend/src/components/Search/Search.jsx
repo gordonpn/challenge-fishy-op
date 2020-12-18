@@ -62,6 +62,11 @@ const Search = () => {
             padding={10}
             width="95vw"
           >
+            {nominations.size >= 5 && (
+              <Text fontSize="lg" align="center">
+                Thank you for nominating five movies!
+              </Text>
+            )}
             <Tabs variant="enclosed">
               <TabList>
                 <Tab _focus={{}}>
@@ -90,11 +95,12 @@ const Search = () => {
                       No results
                     </Text>
                   )}
-                  {debouncedSearchTerm.trim().length === 0 && (
-                    <Text fontSize="lg" align="center">
-                      Search for a movie to nominate
-                    </Text>
-                  )}
+                  {debouncedSearchTerm.trim().length === 0 &&
+                    nominations.size < 5 && (
+                      <Text fontSize="lg" align="center">
+                        Search for a movie to nominate
+                      </Text>
+                    )}
                 </TabPanel>
                 <TabPanel>
                   <Nominations />

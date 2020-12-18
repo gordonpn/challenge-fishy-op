@@ -11,7 +11,11 @@ export default function Nominations() {
     <>
       <SimpleGrid minChildWidth="120px" spacing={10}>
         {Array.from(nominations.values()).map((movie) => (
-          <MovieItem movie={movie} button={<RemoveButton movie={movie} />} />
+          <MovieItem
+            button={<RemoveButton movie={movie} />}
+            key={movie.imdbID}
+            movie={movie}
+          />
         ))}
       </SimpleGrid>
     </>
