@@ -3,13 +3,13 @@ import {
   Container,
   Flex,
   Input,
-  Spinner,
-  Text,
-  Tabs,
-  TabList,
-  TabPanels,
+  Progress,
   Tab,
+  TabList,
   TabPanel,
+  TabPanels,
+  Tabs,
+  Text,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { useQuery } from "react-query";
@@ -79,13 +79,7 @@ const Search = () => {
               <TabPanels>
                 <TabPanel>
                   {isLoading && (
-                    <Spinner
-                      color="blue.500"
-                      emptyColor="gray.200"
-                      size="xl"
-                      speed="0.5s"
-                      thickness="15px"
-                    />
+                    <Progress hasStripe isAnimated size="lg" isIndeterminate />
                   )}
                   {isSuccess && data?.Search?.length > 0 && (
                     <Results results={data.Search} />

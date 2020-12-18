@@ -7,17 +7,13 @@ const Title = styled(Heading)`
 `;
 
 const Hero = () => (
-  <Container centerContent paddingTop={["0.5in", "1.5in"]}>
-    <Flex
-      justifyContent="center"
-      paddingBottom={["0.25in", "0.5in"]}
-      direction="column"
-    >
+  <Container centerContent paddingY="1rem">
+    <Flex justifyContent="center" direction="column">
       <Title align="center">The Shoppies</Title>
       <Title align="center" size="md" paddingTop="0.1in">
         Movie awards for entrepreneurs
       </Title>
-      <Text paddingTop="0.1in">
+      <Text align="center" paddingTop="0.1in">
         This is your chance to nominate five of your favourite movies!
       </Text>
     </Flex>

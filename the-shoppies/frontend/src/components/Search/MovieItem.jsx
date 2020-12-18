@@ -9,7 +9,7 @@ export default function MovieItem({ movie, button }) {
           borderRadius="md"
           src={movie.Poster}
           alt={movie.Title}
-          fallbackSrc="https://via.placeholder.com/150x200?text=No+Poster"
+          fallbackSrc="https://via.placeholder.com/300x450?text=No+Poster"
           round="lg"
         />
       </Flex>

@@ -2,7 +2,6 @@ import { ChakraProvider } from "@chakra-ui/react";
 import React from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { Hydrate } from "react-query/hydration";
-import { ReactQueryDevtools } from "react-query/devtools";
 import Head from "next/head";
 import theme from "../src/theme";
 import "../styles/globals.css";
@@ -19,7 +18,6 @@ function MyApp({ Component, pageProps }) {
           </Head>
           <Component {...pageProps} />
         </Hydrate>
-        <ReactQueryDevtools initialIsOpen />
       </QueryClientProvider>
     </ChakraProvider>
   );
