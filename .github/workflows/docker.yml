@@ -33,6 +33,7 @@ jobs:
         env:
           BRANCH: ${{ matrix.branches }}
           PROJECT: ${{ matrix.project }}
+          NEXT_PUBLIC_OMDB_KEY: ${{ secrets.NEXT_PUBLIC_OMDB_KEY }}
         run: |
           DOCKER_TAG="latest"
           if [ "$BRANCH" = "master" ]; then
@@ -40,7 +41,7 @@ jobs:
           fi
           PROJECT="${PROJECT//\//_}"
           echo ${{ secrets.CR_PAT }} | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
-          docker buildx build -t ghcr.io/gordonpn/shopify_"$PROJECT":"$DOCKER_TAG" --platform linux/amd64,linux/arm64 --push .
+          docker buildx build --build-arg	NEXT_PUBLIC_OMDB_KEY -t ghcr.io/gordonpn/shopify_"$PROJECT":"$DOCKER_TAG" --platform linux/amd64,linux/arm64 --push .
 
       - uses: 8398a7/action-slack@v3
         with:
