@@ -6,7 +6,7 @@ import NominateButton from "./NominateButton";
 export default function Results({ results }) {
   return (
     <>
-      <SimpleGrid minChildWidth="120px" spacing={10}>
+      <SimpleGrid columns={[1, null, 5]} spacing={10}>
         {results.map((movie) => (
           <MovieItem
             button={<NominateButton movie={movie} />}

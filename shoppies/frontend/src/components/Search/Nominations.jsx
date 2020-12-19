@@ -9,7 +9,7 @@ export default function Nominations() {
 
   return (
     <>
-      <SimpleGrid minChildWidth="120px" spacing={10}>
+      <SimpleGrid columns={[1, null, 5]} spacing={10}>
         {Array.from(nominations.values()).map((movie) => (
           <MovieItem
             button={<RemoveButton movie={movie} />}

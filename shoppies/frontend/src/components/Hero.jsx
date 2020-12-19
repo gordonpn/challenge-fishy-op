@@ -9,12 +9,16 @@ const Title = styled(Heading)`
 const Hero = () => (
   <Container centerContent paddingY="3rem">
     <Flex justifyContent="center" direction="column">
-      <Title align="center">The Shoppies</Title>
-      <Title align="center" size="md" paddingTop="1rem">
+      <Title align="center" size="2xl">
+        The Shoppies
+      </Title>
+      <Title align="center" size="lg" paddingTop="1rem">
         Movie awards for entrepreneurs
       </Title>
-      <Text align="center" paddingTop="1rem">
-        This is your chance to nominate five of your favourite movies!
+      <Text align="center" paddingTop="1rem" fontSize="lg">
+        This is your chance to nominate{" "}
+        <span style={{ fontWeight: "bold" }}>five</span> of your favourite
+        movies!
       </Text>
     </Flex>
   </Container>

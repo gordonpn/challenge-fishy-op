@@ -46,7 +46,7 @@ const Search = () => {
           borderWidth="2px"
           boxShadow="md"
           rounded="lg"
-          width={["100%", "50vw"]}
+          width={["95vw", "30vw"]}
         >
           <Input
             _focus={{}}
@@ -65,13 +65,15 @@ const Search = () => {
             borderRadius="15px"
             borderWidth="2px"
             padding={10}
-            width="95vw"
+            width={["95vw", "47vw"]}
           >
-            {nominations.size >= 5 && (
-              <Text fontSize="lg" align="center">
-                Thank you for nominating five movies!
-              </Text>
-            )}
+            <Text fontSize="lg" align="center" paddingBottom="1rem">
+              {nominations.size >= 5
+                ? "Thank you for nominating five movies!"
+                : `You have ${5 - nominations.size} nomination${
+                    nominations.size === 4 ? "" : "s"
+                  } left`}
+            </Text>
             <Tabs variant="enclosed">
               <TabList>
                 <Tab _focus={{}}>
@@ -86,20 +88,22 @@ const Search = () => {
                   {isLoading && (
                     <Progress hasStripe isAnimated size="lg" isIndeterminate />
                   )}
-                  {isSuccess && data?.Search?.length > 0 && (
-                    <Results results={data.Search} />
-                  )}
-                  {isSuccess && data?.Search === undefined && (
-                    <Text fontSize="lg" align="center">
-                      No results
-                    </Text>
-                  )}
-                  {debouncedSearchTerm.trim().length === 0 &&
-                    nominations.size < 5 && (
+                  <Flex justifyContent="center">
+                    {isSuccess && data?.Search?.length > 0 && (
+                      <Results results={data.Search} />
+                    )}
+                    {isSuccess && data?.Search === undefined && (
                       <Text fontSize="lg" align="center">
-                        Search for a movie to nominate
+                        No results
                       </Text>
                     )}
+                    {debouncedSearchTerm.trim().length === 0 &&
+                      nominations.size < 5 && (
+                        <Text fontSize="lg" align="center">
+                          Search for a movie to nominate
+                        </Text>
+                      )}
+                  </Flex>
                 </TabPanel>
                 <TabPanel>
                   <Nominations />
