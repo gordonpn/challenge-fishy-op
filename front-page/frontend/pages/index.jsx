@@ -7,6 +7,14 @@ import {
   Tooltip,
   Text,
   Link,
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverFooter,
+  PopoverArrow,
+  PopoverCloseButton,
 } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
@@ -43,21 +51,22 @@ const Index = () => (
       </Flex>
       <Flex>
         <Stack spacing={4} direction={["column", "row"]} align="center">
-          <Tooltip
-            hasArrow
-            shouldWrapChildren
-            label="Available soon!"
-            placement="top"
-          >
-            <Button
-              rightIcon={<ArrowForwardIcon />}
-              colorScheme="teal"
-              size="lg"
-              _focus={{}}
-            >
-              Image Repository
-            </Button>
-          </Tooltip>
+          <Popover autoFocus={false}>
+            <PopoverTrigger>
+              <Button
+                rightIcon={<ArrowForwardIcon />}
+                colorScheme="teal"
+                size="lg"
+                _focus={{}}
+              >
+                Image Repository
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent _focus={{}}>
+              <PopoverArrow />
+              <PopoverBody>Available soon!</PopoverBody>
+            </PopoverContent>
+          </Popover>
           <Link href="/shoppies" textDecoration="none !important">
             <Button
               _focus={{}}
