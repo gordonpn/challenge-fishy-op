@@ -30,7 +30,7 @@ const Search = () => {
   );
 
   const handleChange = (input) => {
-    setSearchTerm(input.replace(/[^0-9a-z\s]/gi, ""));
+    setSearchTerm(input.replace(/[^0-9a-z\s']/gi, ""));
   };
 
   useEffect(() => {
