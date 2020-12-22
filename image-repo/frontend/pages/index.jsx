@@ -1,6 +1,10 @@
-import { Text } from "@chakra-ui/react";
 import React from "react";
+import TopBar from "../src/components/TopBar";
 
-const Index = () => <Text>Hello from Gordon</Text>;
+const Index = () => (
+  <>
+    <TopBar />
+  </>
+);
 
 export default Index;
