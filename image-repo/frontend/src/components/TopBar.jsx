@@ -1,7 +1,8 @@
-import { Box, Button, Flex, Heading, Icon, IconButton } from "@chakra-ui/react";
+import { Box, Flex, Heading } from "@chakra-ui/react";
 import React from "react";
-import { FaGoogle, FaQuestion } from "react-icons/fa";
 import styled from "@emotion/styled";
+import LogIn from "./LogIn";
+import MoreInfo from "./MoreInfo";
 
 const Title = styled(Heading)`
   font-family: "Rubik", sans-serif;
@@ -19,20 +20,8 @@ const TopBar = () => (
   >
     <Title>Image Repository</Title>
     <Flex>
-      <IconButton
-        _focus={{}}
-        colorScheme="teal"
-        icon={<FaQuestion />}
-        marginRight="1rem"
-      />
-      <Button
-        _focus={{}}
-        colorScheme="teal"
-        leftIcon={<Icon as={FaGoogle} />}
-        variant="solid"
-      >
-        Log in
-      </Button>
+      <MoreInfo />
+      <LogIn />
     </Flex>
   </Box>
 );
