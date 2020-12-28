@@ -64,6 +64,7 @@ const Search = () => {
             bg="#fdfdfd"
             borderRadius="15px"
             borderWidth="2px"
+            minWidth={["0px", "750px"]}
             padding={10}
             width={["95vw", "47vw"]}
           >
