@@ -3,7 +3,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Title = styled(Heading)`
-  font-family: "Bree Serif", serif;
+  font-family: "Nunito", sans-serif;
 `;
 
 const Hero = () => (

@@ -9,7 +9,7 @@ const StickyBottom = styled.div`
 `;
 
 const FooterText = styled(Text)`
-  font-family: "Bree Serif", serif;
+  font-family: "Nunito", sans-serif;
 `;
 
 const Footer = () => (
