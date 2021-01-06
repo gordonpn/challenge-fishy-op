@@ -1,18 +1,27 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function MovieItem({ movie, button }) {
   return (
     <Box align="center" d="flex" flexDirection="column" maxWidth="300px">
       <Flex>
-        <Image
-          alt={movie.Title}
-          borderRadius="md"
-          fallbackSrc="https://via.placeholder.com/300x450?text=No+Poster"
-          round="lg"
-          src={movie.Poster}
-          paddingBottom="0.5rem"
-        />
+        <motion.div whileHover={{ scale: 1.05 }}>
+          <a
+            href={`https://imdb.com/title/${movie.imdbID}`}
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <Image
+              alt={movie.Title}
+              borderRadius="md"
+              fallbackSrc="/images/no-poster-300x450.png"
+              marginBottom="0.5rem"
+              round="lg"
+              src={movie.Poster}
+            />
+          </a>
+        </motion.div>
       </Flex>
       <Flex flexGrow={1} justifyContent="center">
         <Text align="center" fontSize="1.1rem">
