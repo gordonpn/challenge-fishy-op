@@ -15,7 +15,7 @@ export default function RemoveButton({ movie }) {
       duration: 7000,
       isClosable: true,
       position: "top-right",
-      status: "warning",
+      status: "info",
       title: "Nomination removed",
     });
     setRerender(!rerender);

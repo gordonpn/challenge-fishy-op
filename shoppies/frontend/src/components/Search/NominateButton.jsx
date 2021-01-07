@@ -35,7 +35,7 @@ export default function NominateButton({ movie }) {
   return (
     <Button
       _focus={{}}
-      colorScheme="blue"
+      colorScheme="green"
       isDisabled={nominations.has(movie.imdbID) || nominations.size >= 5}
       onClick={(e) => handleNominate(e, movie)}
       value={movie}
