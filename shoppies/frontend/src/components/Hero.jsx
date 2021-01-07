@@ -1,9 +1,11 @@
-import { Container, Flex, Heading, Text } from "@chakra-ui/react";
+import { Container, Flex, Heading } from "@chakra-ui/react";
 import React from "react";
 import styled from "@emotion/styled";
+import { StyledText } from "./Core/Text";
 
 const Title = styled(Heading)`
   font-family: "Nunito", sans-serif;
+  color: #2c313a;
 `;
 
 const Hero = () => (
@@ -15,11 +17,11 @@ const Hero = () => (
       <Title align="center" size="lg" paddingTop="1rem">
         Movie awards for entrepreneurs
       </Title>
-      <Text align="center" paddingTop="1rem" fontSize="lg">
+      <StyledText align="center" paddingTop="1rem" fontSize="lg">
         This is your chance to nominate{" "}
         <span style={{ fontWeight: "bold" }}>five</span> of your favourite
         movies!
-      </Text>
+      </StyledText>
     </Flex>
   </Container>
 );

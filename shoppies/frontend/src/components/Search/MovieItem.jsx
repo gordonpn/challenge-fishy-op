@@ -1,6 +1,7 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image } from "@chakra-ui/react";
 import React from "react";
 import { motion } from "framer-motion";
+import { StyledText } from "../Core/Text";
 
 export default function MovieItem({ movie, button }) {
   return (
@@ -24,9 +25,9 @@ export default function MovieItem({ movie, button }) {
         </motion.div>
       </Flex>
       <Flex flexGrow={1} justifyContent="center">
-        <Text align="center" fontSize="1.1rem">
+        <StyledText align="center" fontSize="1.1rem">
           {movie.Title} ({movie.Year})
-        </Text>
+        </StyledText>
       </Flex>
       <Flex justifyContent="center">{button}</Flex>
     </Box>

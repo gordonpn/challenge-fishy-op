@@ -1,6 +1,7 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import React from "react";
 import styled from "@emotion/styled";
+import { StyledText } from "./Core/Text";
 
 const StickyBottom = styled.div`
   margin-top: 1rem;
@@ -8,14 +9,10 @@ const StickyBottom = styled.div`
   width: 100%;
 `;
 
-const FooterText = styled(Text)`
-  font-family: "Nunito", sans-serif;
-`;
-
 const Footer = () => (
   <StickyBottom>
     <Flex justifyContent="center">
-      <FooterText>Gordon Pham-Nguyen &copy; 2020</FooterText>
+      <StyledText>Gordon Pham-Nguyen &copy; 2020</StyledText>
     </Flex>
   </StickyBottom>
 );
