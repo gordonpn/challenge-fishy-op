@@ -18,9 +18,8 @@ const Hero = () => (
         Movie awards for entrepreneurs
       </Title>
       <StyledText align="center" paddingTop="1rem" fontSize="lg">
-        This is your chance to nominate{" "}
-        <span style={{ fontWeight: "bold" }}>five</span> of your favourite
-        movies!
+        This is your chance to nominate <span style={{ fontWeight: "bold" }}>five</span> of your
+        favourite movies!
       </StyledText>
     </Flex>
   </Container>
