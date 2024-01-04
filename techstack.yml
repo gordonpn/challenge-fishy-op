@@ -1,7 +1,8 @@
 repo_name: gordonpn/challenge-fishy-op
 report_id: ed17020c2ddf2b2920a6dde0e19a6701
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-09T13:28:32+00:00'
+timestamp: '2024-01-04T14:54:07+00:00'
 requested_by: gordonpn
 provider: github
 branch: master
@@ -15,6 +16,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op
   detection_source: Repo Metadata
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -25,6 +27,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op
   detection_source: Repo Metadata
 - name: Next.js
   description: 'A small framework for server-rendered universal JavaScript apps '
@@ -35,8 +38,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/5936/nextjs.png
-  detection_source_url: front-page/frontend/yarn.lock
-  detection_source: shoppies/frontend/package.json
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/yarn.lock
+  detection_source: front-page/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 00:41:32.000000000 Z
 - name: Node.js
@@ -48,7 +51,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
-  detection_source: shoppies/frontend/Dockerfile
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/Dockerfile
+  detection_source: front-page/frontend/Dockerfile
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 02:39:20.000000000 Z
 - name: React
@@ -61,8 +65,8 @@ tools:
   category: Libraries
   sub_category: Javascript UI Libraries
   image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
-  detection_source_url: front-page/frontend/yarn.lock
-  detection_source: shoppies/frontend/package.json
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/yarn.lock
+  detection_source: front-page/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 00:41:32.000000000 Z
 - name: Caddy
@@ -73,7 +77,8 @@ tools:
   category: Application Hosting
   sub_category: Web Servers
   image_url: https://img.stackshare.io/service/3834/caddy.png
-  detection_source: shoppies/frontend/Dockerfile
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/Dockerfile
+  detection_source: front-page/frontend/Dockerfile
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 02:39:20.000000000 Z
 - name: Docker
@@ -85,6 +90,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Virtual Machine Platforms & Containers
   image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op
   detection_source: Repo Metadata
 - name: Drone.io
   description: Open source continuous integration platform built on Docker
@@ -94,6 +100,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/668/R_wMcCqN_400x400.png
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/.drone.yml
   detection_source: ".drone.yml"
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-18 19:23:21.000000000 Z
@@ -106,7 +113,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
-  detection_source: shoppies/frontend/package.json
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/package.json
+  detection_source: front-page/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 00:41:32.000000000 Z
 - name: Git
@@ -117,6 +125,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op
   detection_source: Repo Metadata
 - name: GitHub Actions
   description: Automate your workflow from idea to production
@@ -126,6 +135,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/.github/workflows/docker.yml
   detection_source: ".github/workflows/docker.yml"
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-18 17:31:57.000000000 Z
@@ -138,6 +148,7 @@ tools:
   category: Application Hosting
   sub_category: Web Servers
   image_url: https://img.stackshare.io/service/1052/YMxUfyWf.png
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/proxy/nginx.conf
   detection_source: proxy/nginx.conf
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-18 17:31:57.000000000 Z
@@ -151,8 +162,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
-  detection_source_url: front-page/frontend/yarn.lock
-  detection_source: shoppies/frontend/package.json
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/yarn.lock
+  detection_source: front-page/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 00:57:52.000000000 Z
 - name: Yarn
@@ -163,7 +174,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
-  detection_source: shoppies/frontend/yarn.lock
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/yarn.lock
+  detection_source: front-page/frontend/yarn.lock
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 00:41:32.000000000 Z
 - name: npm
@@ -174,6 +186,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/shoppies/frontend/package.json
   detection_source: shoppies/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 00:41:32.000000000 Z
@@ -186,6 +199,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op
   detection_source: Repo Metadata
 - name: axios
   description: Promise based HTTP client for the browser and node.js
@@ -197,7 +211,7 @@ tools:
   category: Libraries
   sub_category: Javascript Utilities & Libraries
   image_url: https://img.stackshare.io/no-img-open-source.png
-  detection_source_url: shoppies/frontend/yarn.lock
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/shoppies/frontend/yarn.lock
   detection_source: shoppies/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2021-01-07 16:40:49.000000000 Z
@@ -211,8 +225,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16702/default_4b738bf1758d38dddd276589bbea47fca5a990df.png
-  detection_source_url: front-page/frontend/yarn.lock
-  detection_source: shoppies/frontend/package.json
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/yarn.lock
+  detection_source: front-page/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 00:41:32.000000000 Z
 - name: eslint-config-airbnb
@@ -225,8 +239,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15857/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
-  detection_source_url: front-page/frontend/yarn.lock
-  detection_source: shoppies/frontend/package.json
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/yarn.lock
+  detection_source: front-page/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 00:57:52.000000000 Z
 - name: eslint-config-prettier
@@ -239,8 +253,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
-  detection_source_url: front-page/frontend/yarn.lock
-  detection_source: shoppies/frontend/package.json
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/yarn.lock
+  detection_source: front-page/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 00:57:52.000000000 Z
 - name: eslint-plugin-import
@@ -253,8 +267,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15806/default_98aa227f51aa9d787815ec3fd98d0ab2bfebbb91.png
-  detection_source_url: front-page/frontend/yarn.lock
-  detection_source: shoppies/frontend/package.json
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/yarn.lock
+  detection_source: front-page/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 02:39:20.000000000 Z
 - name: eslint-plugin-jsx-a11y
@@ -267,8 +281,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15845/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
-  detection_source_url: front-page/frontend/yarn.lock
-  detection_source: shoppies/frontend/package.json
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/yarn.lock
+  detection_source: front-page/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 00:57:52.000000000 Z
 - name: eslint-plugin-prettier
@@ -281,8 +295,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15896/default_6e6e1d6bb189c8bb26c6410618bd597979578f39.png
-  detection_source_url: front-page/frontend/yarn.lock
-  detection_source: shoppies/frontend/package.json
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/yarn.lock
+  detection_source: front-page/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 00:57:52.000000000 Z
 - name: eslint-plugin-react
@@ -295,8 +309,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15817/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
-  detection_source_url: front-page/frontend/yarn.lock
-  detection_source: shoppies/frontend/package.json
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/yarn.lock
+  detection_source: front-page/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 00:57:52.000000000 Z
 - name: eslint-plugin-react-hooks
@@ -309,8 +323,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16149/default_1f3a2fc7d882e29a43394ecdf491b8989ea3f0fa.png
-  detection_source_url: front-page/frontend/yarn.lock
-  detection_source: shoppies/frontend/package.json
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/yarn.lock
+  detection_source: front-page/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 00:57:52.000000000 Z
 - name: react-dom
@@ -323,8 +337,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
-  detection_source_url: front-page/frontend/yarn.lock
-  detection_source: shoppies/frontend/package.json
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/front-page/frontend/yarn.lock
+  detection_source: front-page/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-16 00:41:32.000000000 Z
 - name: react-icons
@@ -337,7 +351,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16909/default_7b9968788548874538c601457e8dcd9c74bd2051.png
-  detection_source_url: image-repo/frontend/yarn.lock
+  detection_source_url: https://github.com/gordonpn/challenge-fishy-op/blob/master/image-repo/frontend/yarn.lock
   detection_source: image-repo/frontend/package.json
   last_updated_by: Gordon Pham-Nguyen
   last_updated_on: 2020-12-22 17:19:00.000000000 Z
